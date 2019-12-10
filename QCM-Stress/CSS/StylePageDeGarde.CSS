@@ -1,0 +1,48 @@
+html
+{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    min-width: 360px; /*Pour ne pas réduire la taille en-deça du minimum du bloc principal.*/
+    min-height: 360px; /*Pour ne pas réduire la taille en-deça du minimum du bloc principal.*/
+}
+
+body
+{
+	text-align: center;
+	height: 100%;
+	width: 100%;
+	margin: 0px;
+}
+
+#BlocPrincipal
+{
+	height: 100%;
+	width: 100%;
+	min-height: 360px;
+	min-width: 360px;
+	background-color: cyan;
+
+	display: flex;
+  	flex-direction: column;
+  	justify-content: center;
+
+  	align-items: center;
+}
+
+#BlocSecondaire
+{
+	border: solid;
+	background-color: green;
+}
+
+#EntreeJoueur
+{
+	text-align : center;
+}
+
+p
+{
+	font-weight: bold;
+	font-size: 25px;
+}

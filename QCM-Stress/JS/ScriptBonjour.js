@@ -2,7 +2,7 @@ document.addEventListener("click", Clique, false);
 
 function Clique()
 {
-	window.open('./QCM-Question_1.html',"_self");
+	window.open('./QCM-Stress-Question_1.html',"_self");
 }
 
 function recuperationNomDuJoueur()

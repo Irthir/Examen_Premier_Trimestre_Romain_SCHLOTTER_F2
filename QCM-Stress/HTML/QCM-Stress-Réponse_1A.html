@@ -14,11 +14,12 @@
 	<BODY>
 		<header><!--Identité : Logo, bannière--></header>
 		<div id="BlocPrincipal">
-			<h1>Premièrement êtes-vous un Homme ou une Femme ?</h1>
+			<div id="BlocTertiaire">
+				<h1>Je vois, cela n'a en général pas d'incidence sur votre niveau de stress.</h1>
+			</div>
 			<div id="BlocSecondaire">
-				<h2 onclick="window.open('./QCM-Stress.html','_self')">1) Un Homme.</h2>
-				<h2 onclick="window.open('./QCM-Stress.html','_self')">2) Une Femme.</h2>
-				<h2 onclick="window.open('./QCM-Stress.html','_self')">3) Je ne souhaite pas me prononcer.</h2>
+				<p>Vous avez donc compris comment ce questionnaire fonctionne.</p>
+				<p>Quand vous vous sentez prêt à passer à la question suivante appuyez sur l'écran ou cliquez.</p>
 			</div>
 		</div>
 
@@ -30,5 +31,12 @@
 	-->
 	</BODY>
 	<!--On appelle le JS après le reste pour éviter les erreurs de recherches.-->
-	<script type="text/javascript" src="../JS/ScriptPageDeGarde.js"></script>
+	<script type="text/javascript">
+		document.addEventListener("click", Clique, false);
+
+		function Clique()
+		{
+			window.open('./QCM-Question_2.html',"_self");
+		}
+	</script>
 </HTML>

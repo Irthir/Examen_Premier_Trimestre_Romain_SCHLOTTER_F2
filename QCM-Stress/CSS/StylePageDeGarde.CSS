@@ -21,7 +21,7 @@ body
 	width: 100%;
 	min-height: 360px;
 	min-width: 360px;
-	background-color: #00FFFF; /*Cyan*/
+	background-color: #33FFFF; /*Cyan*/
 
 	display: flex;
   	flex-direction: column;
@@ -32,9 +32,7 @@ body
 
 #BlocSecondaire,#BlocTertiaire
 {
-	border: solid;
-	
-	background-color: #008000; /*green*/
+	/*border: solid;*/
 
 	width: 75%;
 
@@ -45,13 +43,18 @@ body
 
 #BlocTertiaire
 {
+	border-top-right-radius:5% 25%; 
+	border-top-left-radius:5% 25%;
 	height: 20%;
-	background-color: #009000; /*green +1*/
+	background-color: #5fc15f;/*green +1*/
 }
 
 #BlocSecondaire
 {
-	border-top: hidden;
+	border-bottom-right-radius:5% 15%; 
+	border-bottom-left-radius:5% 15%;
+	/*border-top: hidden;*/
+	background-color: #609e53; 
 	height: 55%;
 }
 
@@ -71,22 +74,22 @@ p
 
 .Bouton_Réponse
 {
-	border: solid;
+	/*border: solid;*/
 	width: 60%;
 	margin-left: auto;
 	margin-right: auto;
 
-	background-color: #009000; /*green +1*/
+	background-color: #5fc15f; /*green +1*/
 }
 
 .Bouton_Réponse:hover
 {
-	background-color:  #00A000; /*green +2*/
+	background-color:  #5fe15f; /*green +2*/
 }
 
 .Bouton_Réponse:onclick
 {
-	background-color:  #00B000; /*green +3*/
+	background-color:  #5ff15f; /*green +3*/
 }
 
 @font-face

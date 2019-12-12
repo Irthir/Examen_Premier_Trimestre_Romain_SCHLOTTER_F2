@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<HTML>
+	<HEAD>
+		<!--Information de configuration : encodage, langue,...-->
+		<meta charset="utf-8"/>
+		<lang="fr"/>
+		<!--Appelle du style par un fichier externe.-->
+		<link rel="stylesheet" type="text/css" href="../CSS/StylePageDeGarde.CSS" charset="utf-8"/>
+		<!--Insertion du Style spécifique à la page.-->
+		<Style>
+			@keyframes AnimeBulle
+			{
+				0% {bottom: 0%;}
+				50%{bottom: 70%;}
+				100%{bottom: 0%;}
+			}
+			@keyframes ApparitionDisparition
+			{
+				0% {opacity:0%;}
+				49.999%{opacity: 0%;}
+				50%{opacity: 100%;}
+				99.999%{opacity: 100%;}
+				100%{opacity: 0%;}
+			}
+		</Style>
+		<!--Miniature-->
+		<link rel="shortcut icon" type="image/x-icon" href="../Contenus/images/Bulle.jpg"/>
+		<!--Titre-->
+		<TITLE>Evaluation du Stress</TITLE>
+	</HEAD>
+	<BODY style="background: linear-gradient(#A1BEFF, #5419FF);">
+		<header><!--Identité : Logo, bannière--></header>
+		<img src="../Contenus/images/Bulle.png" alt="La Bulle." style="position: absolute; bottom: 0%; animation: AnimeBulle; animation-iteration-count: infinite; animation-direction: normal; animation-duration: 8s; height: 30%;" />
+		<h2 id="TexteDroit" style="position: absolute; right: 70%; animation: ApparitionDisparition; animation-iteration-count: infinite; animation-direction: reverse; animation-duration: 8s; top: 20%; font-size: 800%;">Inspirez</h2>
+		<h2 id="TexteGauche" style="position: absolute; right: 70%; animation: ApparitionDisparition; animation-iteration-count: infinite; animation-duration: 8s; top: 20%; font-size: 800%;">Expirez</h2>
+	<!--
+	<footer>
+		Contact : r.schlotter@ludus-académie.com<br/>
+		Téléphone : +33624202366
+	</footer>
+	-->
+	</BODY>
+	<script type="text/javascript">
+		document.addEventListener("click", Clique, false);
+
+		function Clique()
+		{
+			window.open('./QCM-Stress.html',"_self");
+		}
+	</script>
+</HTML>

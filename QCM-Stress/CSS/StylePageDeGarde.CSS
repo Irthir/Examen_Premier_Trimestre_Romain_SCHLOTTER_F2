@@ -88,3 +88,9 @@ p
 {
 	background-color:  #00B000; /*green +3*/
 }
+
+@font-face
+{
+	font-family: "ScriptBl";
+ 	src: url("./Police/SCRIPTBL.TTF");
+}

@@ -2,7 +2,7 @@ document.addEventListener("click", Clique, false);
 
 function Clique()
 {
-	window.open('./QCM-Stress-Question_1.html',"_self");
+	window.open('./QCM-Stress-Introduction.html',"_self");
 }
 
 function recuperationNomDuJoueur()
@@ -11,7 +11,15 @@ function recuperationNomDuJoueur()
 	var nomDuJoueur=url.split('?')[1];
 	console.log(nomDuJoueur);
 	var nomAffiche=document.getElementById('nomDuJoueur');
-	nomAffiche.innerHTML=nomDuJoueur;
+	if (nomDuJoueur!=undefined)
+	{
+		nomAffiche.innerHTML=nomDuJoueur;	
+	}
+	else
+	{
+		nomAffiche.innerHTML="Joueur"
+	}
+	
 }
 
 recuperationNomDuJoueur();

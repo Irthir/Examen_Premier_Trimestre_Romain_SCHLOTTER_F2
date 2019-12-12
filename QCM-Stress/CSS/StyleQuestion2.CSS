@@ -1,0 +1,17 @@
+
+#BlocSecondaire
+{	
+	background-color: #C0C000; /*couleur principale*/
+}
+#BlocTertiaire,.Bouton_Réponse
+{
+	background-color: #D0D000; /*couleur principale +1*/
+}
+.Bouton_Réponse:hover
+{
+	background-color:  #E0E000; /*couleur principale +2*/
+}
+.Bouton_Réponse:onclick
+{
+	background-color:  #F0F000; /*couleur principale +3*/
+}

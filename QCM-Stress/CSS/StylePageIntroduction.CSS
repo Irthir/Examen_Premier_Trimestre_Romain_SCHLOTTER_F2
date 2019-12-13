@@ -1,0 +1,99 @@
+html
+{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    min-width: 360px; /*Pour ne pas réduire la taille en-deça du minimum du bloc principal.*/
+    min-height: 360px; /*Pour ne pas réduire la taille en-deça du minimum du bloc principal.*/
+}
+
+body
+{
+	text-align: center;
+	height: 100%;
+	width: 100%;
+	margin: 0px;
+}
+
+#BlocPrincipal
+{
+	height: 100%;
+	width: 100%;
+	min-height: 360px;
+	min-width: 360px;
+	background-color: #33FFFF; /*Cyan*/
+
+	display: flex;
+  	flex-direction: column;
+  	justify-content: center;
+
+  	align-items: center;
+}
+
+#BlocSecondaire,#BlocTertiaire
+{
+	/*border: solid;*/
+
+	width: 75%;
+
+	display: flex; /* contexte sur le parent */
+  	flex-direction: column; /* direction d'affichage verticale */
+  	justify-content: center; /* alignement vertical */
+}
+
+#BlocTertiaire
+{
+	border-top-right-radius:5% 25%; 
+	border-top-left-radius:5% 25%;
+	height: 20%;
+	background-color: #5f5fc1;/*green +1*/
+}
+
+#BlocSecondaire
+{
+	border-bottom-right-radius:5% 15%; 
+	border-bottom-left-radius:5% 15%;
+	/*border-top: hidden;*/
+	background-color: #53609e; 
+	height: 55%;
+}
+
+#EntreeJoueur
+{
+	text-align : center;
+	margin-top: 2%;
+	margin-left: 40%;
+	margin-right: 40%;
+}
+
+p
+{
+	font-weight: bold;
+	font-size: 25px;
+}
+
+.Bouton_Réponse
+{
+	/*border: solid;*/
+	width: 60%;
+	margin-left: auto;
+	margin-right: auto;
+
+	background-color: #5f5fc1; /*green +1*/
+}
+
+.Bouton_Réponse:hover
+{
+	background-color:  #5f5fe1; /*green +2*/
+}
+
+.Bouton_Réponse:onclick
+{
+	background-color:  #5f5ff1; /*green +3*/
+}
+
+@font-face
+{
+	font-family: "ScriptBl";
+ 	src: url("./Police/SCRIPTBL.TTF");
+}
